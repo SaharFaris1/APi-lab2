@@ -11,7 +11,8 @@ function fetchRandomImage() {
             let img = document.createElement("img");
             img.src = data.file; 
             img.style.width = "300px";
-            img.style.height = "300px"
+            img.style.height = "300px";
+
             card.appendChild(img);
             images.appendChild(card);
         })
@@ -19,4 +20,4 @@ function fetchRandomImage() {
 }
 
 fetchRandomImage();
-setInterval(fetchRandomImage, 5000);
+setInterval(fetchRandomImage, 2000);
